@@ -1,0 +1,50 @@
+/* form, div.response-display {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: fit-content;
+  background-color: lightseagreen;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0px;
+} */
+body {
+  background-color: lightgrey;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+
+}
+
+h2 {
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.textarea {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.button{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+}
+
+.button button{
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  background-color: lightblue;
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Word Counter</title>
+    <script type="text/javascript" src="./js/bundle.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h2>Enter Some Text Below</h2>
+      </div>
+
+      <div class="textarea">
+      <textarea name="name" rows="8" cols="80" v-model="textArea"></textarea>
+      </div>
+
+      <div class="button">
+        <button v-on:click="countWords">Count Words</button>
+      </div>
+      <h3 v-if="wordNumber > 0">This phrase contains {{ wordNumber }} of words</h3>
+    </div>
+  </body>
+</html>
