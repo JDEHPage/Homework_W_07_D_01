@@ -22,7 +22,7 @@
       <textarea name="name" rows="8" cols="80" v-model="textArea"></textarea>
       </div>
 
-      <div class="button">
+      <div v-if="textArea != ''" class="button">
         <button v-on:click="countWords">Count Words</button>
       </div>
       <h3 v-if="wordNumber > 0">This phrase contains {{ wordNumber }} of words</h3>
