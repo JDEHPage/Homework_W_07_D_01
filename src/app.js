@@ -8,16 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     el: '#app',
     data: {
       textArea: "",
-      wordNumber: ""
+      wordNumber: 0
 
     },
     methods: {
       countWords: function() {
-
-        this.wordNumber = WordCounter(this.textArea);
-        this.textArea = ""
+        if(this.textArea != ""){
+          this.wordNumber = WordCounter(this.textArea);
+          this.textArea = ""
+        }
       }
-
     }
   });
 });
